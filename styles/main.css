@@ -1,0 +1,428 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.header-logo {
+    display: block;
+    background-image: url(../images/logo1.svg);
+    height: 58px;
+    width: 288px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-nav {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    gap: 45px;
+}
+.header-nav a {
+    font-weight: 600;
+    font-size: 20px;
+    color: #9c0404fb;
+    text-decoration: none;
+}
+.header-nav a:hover {
+    color: #000;
+}
+.header-phone {
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: #630000;
+}
+.header-phone:hover {
+    color: #c92e2efb;
+}
+/* Главная */
+.bg {
+    text-align: center;
+    background-image: url(../images/landscape1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -41px;
+    padding: 110px 0;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.title {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 75px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #FAF9F9;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.about-muzeum {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding-top: 60px;
+}
+.text {
+    font-size: 22px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    border: 1px solid #444444;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+.picture {
+    background-image: url(../images/muzeum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 454px;
+    border-radius: 15px;
+}
+.muzeum-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 45px;
+    color: #630000;
+}
+.muzeum-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 120px;
+}
+.muzeum-grid-link {
+    background-color: #fff20057;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+.muzeum-grid-link:hover {
+    background-color: #fff200c0;
+}
+.muzeum-grid-link.one {
+    background-image: url(../images/toy.SVG);
+}
+.muzeum-grid-link.two {
+    background-image: url(../images/phone.SVG);
+}
+.muzeum-grid-link.three {
+    background-image: url(../images/music.SVG);
+}
+.muzeum-grid-link.four {
+    background-image: url(../images/tea.SVG);
+}
+.muzeum-grid-link.five {
+    background-image: url(../images/fashion.SVG);
+}
+.muzeum-grid-link.six {
+    background-image: url(../images/pen.SVG);
+}
+.muzeum-grid .muzeum-grid-title {
+    padding-top: 60px;
+    margin-bottom: 0;
+}
+
+.muzeum-grid-about {
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.reviews_item {
+    background-color: rgb(133 178 239 / 13%);
+    border-radius: 15px;
+    padding: 10px;
+    /*background-image: url(../images/screp.SVG);
+    background-size: 30px 30px;
+    background-position-x: 347px;
+    background-repeat: no-repeat;*/
+    height: 470px;
+    margin-bottom: 100px;
+}
+.name {
+    position: relative;
+}
+.clip {
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    right: -150px;
+    width: 30px;
+}
+.reviews_item p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+.footer {
+    background-color: #96969662;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.footer-logo {
+    height: 58px;
+    width: 288px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.phones {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+    color: #8f4100;
+    font-size: 19px;
+}
+.footer a:hover {
+    color: #000;
+}
+
+/* Контакты */
+
+td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    background: #d5949461;
+    padding: 10px 20px;
+    color: #630000;
+}
+td:first-child {
+    background: #9e08086e;
+    color: white;
+}
+.map {
+    padding-bottom: 100px;
+}
+.main-contacts {
+    background: linear-gradient(90deg, #3862fd1f 0%, rgba(94, 85, 233, 0) 145.23%);
+}
+.cnt {
+    padding-top: 50px;
+    margin-top: 0;
+}
+.tel {
+    text-decoration: none;
+    color: #630000;
+}
+.tel:hover {
+    color:#9e08086e;
+}
+.mail {
+    text-decoration: none;
+    color: #630000;
+}
+.mail:hover {
+    color:#9e08086e;
+}
+
+/* Музеи */
+
+.onlain-muzeim-photo {
+    background-repeat: no-repeat;
+}
+.onlain-muzeim-title {
+    text-align: center;
+}
+.onlain-muzeim-link {
+    text-decoration: none;
+    color: #630000;
+    font-size: 19px;
+}
+.onlain-muzeim-link:hover {
+    color:#302424fb;
+    font-size: 21px;
+}
+.muzeum-grid-19 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 80px;
+}
+.muzeum-photo-grid {
+    height: 251px;
+}
+.offlain-muzeim-title {
+    color: #630000;
+    font-size: 19px;
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    .reviews_item p {
+        font-size: 19px;
+    }
+    .reviews_item {
+        height: 435px;
+    }
+}
+@media (max-width: 1150px) {
+    .picture {
+        height: 330px;
+    }
+}
+@media (max-width: 1120px) {
+    .reviews_item p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1060px) {
+    .bg {
+        margin-bottom: 30px;
+    }
+    .reviews_item p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        min-width: 735px;
+    }
+    .header-logo {
+        height: 44px;
+        width: 224px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-nav a {
+        font-size: 18px;
+    }
+    .header-phone {
+        font-size: 18px;
+    }
+    .bg {
+        padding: 80px 0;
+    }
+    .title {
+        font-size: 70px;
+    }
+    .picture {
+        height: 310px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .about-muzeum {
+        margin-bottom: 85px;
+    }
+    .muzeum-title {
+        font-size: 35px;
+    }
+    .muzeum-grid {
+        margin-bottom: 85px;
+    }
+    .clip {
+        right: -110px;
+        height: 25px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .reviews_item {
+        margin-bottom: 65px;
+    }
+    .reviews_item p {
+        font-size: 16px;
+    }
+    .footer-logo {
+        height: 44px;
+        width: 224px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer a {
+        font-size: 16px;
+    }
+}
+@media (max-width: 900px) {
+    .bg {
+        margin-bottom: 5px;
+    }
+    .about-muzeum {
+        display: block;
+        margin-bottom: 65px;
+    }
+    .text {
+        max-width: 584px;
+        margin: 20px auto;
+        background-image: url(../images/muzeum_new.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        font-weight: 400;    
+    }
+    .picture {
+        display: none;
+    }
+    .muzeum-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 840px) {
+    .reviews_item {
+        height: 310px;
+    }
+}
+@media (max-width: 800px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .header-logo {
+        height: 40px;
+        width: 198px;
+    }
+    .header-nav {
+        gap: 20px;
+    }
+    .header-phone {
+        font-size: 16px;
+    }
+    .bg {
+        padding: 60px 0;
+    }
+    .title {
+        font-size: 63px;
+        max-width: 786px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    .muzeum-grid {
+        margin-bottom: 65px;
+    }
+}
