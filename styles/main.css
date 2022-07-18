@@ -31,7 +31,7 @@ body {
 .header-nav a {
     font-weight: 600;
     font-size: 20px;
-    color: #9c0404fb;
+    color: #9c0404;
     text-decoration: none;
 }
 .header-nav a:hover {
@@ -44,7 +44,7 @@ body {
     color: #630000;
 }
 .header-phone:hover {
-    color: #c92e2efb;
+    color: #c92e2e;
 }
 /* Главная */
 .bg {
@@ -109,7 +109,7 @@ body {
     margin-bottom: 120px;
 }
 .muzeum-grid-link {
-    background-color: #fff20057;
+    background-color: #fff98f;
     background-size: 50px 50px;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -181,7 +181,7 @@ body {
     font-size: 20px;
 }
 .footer {
-    background-color: #96969662;
+    background-color: #cfcfcf;
     display: flex;
     align-items: center;
     justify-content: center;
