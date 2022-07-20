@@ -218,7 +218,7 @@ td:first-child {
     color: white;
 }
 .map {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 .main-contacts {
     background: linear-gradient(90deg, rgba(56, 98, 253, 0.122) 0%, rgba(94, 85, 233, 0) 145.23%);
@@ -227,12 +227,26 @@ td:first-child {
     padding-top: 50px;
     margin-top: 0;
 }
+table {
+    margin-bottom: 50px;
+}
 .tel {
     text-decoration: none;
     color: #630000;
 }
 .tel:hover {
     color:rgba(158, 8, 8, 0.431);
+}
+.tel-table a::after {
+    content: ',';
+    position: relative;
+    pointer-events: none;
+}
+.tel-table a:last-child::after {
+    display: none;
+}
+.tel:hover::after {
+    color: #630000;
 }
 .mail {
     text-decoration: none;
@@ -408,6 +422,11 @@ td:first-child {
     .footer a {
         font-size: 16px;
     }
+
+    /* Контакты */
+    table {
+        margin-bottom: 40px;
+    }
 }
 @media (max-width: 900px) {
     .bg {
@@ -466,6 +485,11 @@ td:first-child {
     .muzeum-grid {
         margin-bottom: 65px;
     }
+
+    /* Контакты */
+    .map {
+        padding-bottom: 60px;
+    }
 }
 @media (max-width: 765px) {
     .nav {
@@ -486,6 +510,11 @@ td:first-child {
     .footer-mail {
         margin-bottom: 15px;
     }
+
+    /* Контакты */
+    table {
+        font-size: 15px;
+    }
 }
 @media (max-width: 680px) {
     .bg {
@@ -496,6 +525,15 @@ td:first-child {
     }
     .description {
         font-size: 12px;
+    }
+
+    /* Контакты */
+    .tel-table {
+        display: flex;
+        flex-direction: column;
+    }
+    td {
+        padding: 8px 10px;
     }
 }
 @media (max-width: 600px) {
@@ -525,6 +563,14 @@ td:first-child {
         overflow-y: hidden;
         padding-bottom: 50px;
     }
+    /* Контакты */
+    table {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .map {
+        padding-bottom: 40px;
+    }
 
     /* Музеи */
     .muzeum-grid-19 {
@@ -542,6 +588,11 @@ td:first-child {
     .description {
         display: none;
     }
+
+    /* Контакты */
+    table {
+        font-size: 13px;
+    }
 }
 @media (max-width: 360px) {
     .header_menu {
@@ -557,5 +608,13 @@ td:first-child {
     }
     .title {
         font-size: 30px;
+    }
+
+    /* Контакты */
+    td {
+        padding: 5px 8px;
+    }
+    table {
+        font-size: 12px;
     }
 }
