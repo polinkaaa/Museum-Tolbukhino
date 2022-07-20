@@ -230,11 +230,11 @@ td:first-child {
 table {
     margin-bottom: 50px;
 }
-.tel {
+.tel, .mail, .address {
     text-decoration: none;
     color: #630000;
 }
-.tel:hover {
+.tel:hover, .mail:hover, .address:hover {
     color:rgba(158, 8, 8, 0.431);
 }
 .tel-table a::after {
@@ -247,13 +247,6 @@ table {
 }
 .tel:hover::after {
     color: #630000;
-}
-.mail {
-    text-decoration: none;
-    color: #630000;
-}
-.mail:hover {
-    color:rgba(158, 8, 8, 0.431);
 }
 
 /* Музеи */
