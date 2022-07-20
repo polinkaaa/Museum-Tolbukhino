@@ -297,6 +297,7 @@ td:first-child {
     padding: 40px 30px;
     box-sizing: border-box;
     transition: .5s;
+    z-index: 1;
 }
 .modal .header-nav {
     flex-direction: column;
@@ -431,6 +432,11 @@ td:first-child {
     .muzeum-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Музеи */
+    .muzeum-grid-19 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (max-width: 800px) {
     .header {
@@ -513,6 +519,15 @@ td:first-child {
         font-size: 24px;
     }
     .muzeum-grid {
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+
+    /* Музеи */
+    .muzeum-grid-19 {
         display: flex;
         width: auto;
         overflow-x: scroll;

@@ -20,10 +20,19 @@ $(document).ready(function(){
   $(".slide-two").owlCarousel({
       loop: true,
       margin: 20,
-      items: 3,
+      items: 1,
       autoplay:true, //Автозапуск слайдера
       smartSpeed:2000, //Время движения слайда
       autoplayTimeout:5000, //Время смены слайда
+      zindex: 0,
+      responsive: {
+        450: {
+          items: 2,
+        },
+        900: {
+          items: 3,
+        }
+      },
   });
 });
 
