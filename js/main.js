@@ -1,20 +1,31 @@
-$(document).ready(function(){
-  $(".slide-one").owlCarousel({
-      center: false,
-      loop: true,
-      margin: 20,
-      items: 1,
-      responsive: {
-        450: {
-          items: 2,
-        },
-        841: {
-          items: 3,
-          center: true,
-        }
-      },
-  });
+
+var owl = $('.slide-one');
+owl.owlCarousel({
+  center: false,
+  loop: true,
+  margin: 20,
+  items: 1,
+  responsive: {
+    450: {
+      items: 2,
+    },
+    841: {
+      items: 3,
+      center: true,
+    }
+  },
 });
+// Go to the next item
+$('.arrow-right').click(function() {
+    owl.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('.arrow-left').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owl.trigger('prev.owl.carousel');
+})
+
 
 $(document).ready(function(){
   $(".slide-two").owlCarousel({
@@ -35,6 +46,7 @@ $(document).ready(function(){
       },
   });
 });
+
 
 const links = document.querySelectorAll(".link-serf");
 for (const link of links) {

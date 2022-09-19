@@ -7,7 +7,7 @@
     <title>Музеи</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500&family=Merriweather:wght@700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500&family=Merriweather:wght@700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -44,122 +44,171 @@
 
     <main class="main-contacts">
         <div class="container">
-            <h1 class="muzeum-title cnt">Посетите 6 наших музеев не выходя из дома</h1>
+            <h1 class="muzeum-title cnt">Посетите 3&nbsp;наших музея не выходя из дома</h1>
             <div class="owl-carousel slide-two">
                 <div>
                     <a class="onlain-muzeim-link" href="#">
-                        <img src="../images/5.jpg" alt="Музей 1" class="onlain-muzeim-photo">
-                        <h4 class="onlain-muzeim-title">Музей 1</h4>
+                        <img src="../images/m-glass.jpg" alt="Музей хрусталя" class="onlain-muzeim-photo muzeum-photo-grid">
+                        <h4 class="onlain-muzeim-title">Музей хрусталя</h4>
                     </a>
                 </div>
                 <div>
                     <a class="onlain-muzeim-link" href="#">
-                        <img src="../images/5.jpg" alt="Музей 2" class="onlain-muzeim-photo">
-                        <h4 class="onlain-muzeim-title">Музей 2</h4>
+                        <img src="../images/m-tea.jpg" alt="Музей русского чаепития" class="onlain-muzeim-photo muzeum-photo-grid">
+                        <h4 class="onlain-muzeim-title">Музей русского чаепития</h4>
                     </a>
                 </div>
                 <div>
                     <a class="onlain-muzeim-link" href="#">
-                        <img src="../images/5.jpg" alt="Музей 3" class="onlain-muzeim-photo">
-                        <h4 class="onlain-muzeim-title">Музей 3</h4>
-                    </a>
-                </div>
-                <div>
-                    <a class="onlain-muzeim-link" href="#">
-                        <img src="../images/5.jpg" alt="Музей 4" class="onlain-muzeim-photo">
-                        <h4 class="onlain-muzeim-title">Музей 4</h4>
-                    </a>
-                </div>
-                <div>
-                    <a class="onlain-muzeim-link" href="#">
-                        <img src="../images/5.jpg" alt="Музей 5" class="onlain-muzeim-photo">
-                        <h4 class="onlain-muzeim-title">Музей 5</h4>
-                    </a>
-                </div>
-                <div>
-                    <a class="onlain-muzeim-link" href="#">
-                        <img src="../images/5.jpg" alt="Музей 6" class="onlain-muzeim-photo">
-                        <h4 class="onlain-muzeim-title">Музей 6</h4>
+                        <img src="../images/m-music.jpg" alt="Музей музыкальных инструментов" class="onlain-muzeim-photo muzeum-photo-grid">
+                        <h4 class="onlain-muzeim-title">Музей музыкальных инструментов</h4>
                     </a>
                 </div>
             </div>
-            <h1 class="muzeum-title">Остальные 19 музеев уже ждут Вас</h1>
+            <h1 class="muzeum-title">Остальные музеи уже ждут&nbsp;Вас</h1>
             <div class="muzeum-grid-19">
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 7</h4>
+                <button class="muzeum-grid-19-items" type="button" onclick="document.getElementById('MusOne').style.visibility = 'visible'">
+                    <img src="../images/m-history.jpg" alt="Музей  истории села Толбухино" class="muzeum-photo-grid">
+                    <h4 class="offlain-muzeim-title">Музей  истории села Толбухино</h4>
+                </button>
+                <div class="main__about main__about_1" id="MusOne">
+                    <div>
+                        <h3 class="main__title">Музей  истории села Толбухино</h3>
+                        <p class="main__description">В ходе экскурсий по музею истории села Толбухино, посетители узнают удивительные истории о знаменитой фатьяновской культуре, увидят и потрогают руками подлинные предметы III тысячелетия до н.э., услышат рассказы о крестьянском и купеческом сословии, отхожих промыслах кузнечном и лепном промысле, швейном деле и других ремёслах жителей села Давыдково (ныне село Толбухино). Узнают удивительные легенды о посещении этих мест царём Иваном Грозным и царём Пётром Великим.</p>
+                    </div>
+                    <img src="../images/history.jpg" alt="history" class="m-photo">
+                    <button type="button" class="close" onclick="document.getElementById('MusOne').style.visibility = 'hidden'"></button>
                 </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 8" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 8</h4>
+                <button class="muzeum-grid-19-items" type="button" onclick="document.getElementById('MusTwo').style.visibility = 'visible'">
+                   <img src="../images/m-metal.jpg" alt="Музей  художественного металла" class="muzeum-photo-grid">
+                    <h4 class="offlain-muzeim-title">Музей  художественного металла</h4>
+                </button>
+                <div class="main__about main__about_2" id="MusTwo">
+                    <div>
+                        <h3 class="main__title">Музей  художественного металла</h3>
+                        <p class="main__description">Музей художественного металла села Толбухино. В нем изделия Касли, кованые секирные замки времён Ивана Грозного от крепостных и монастырских ворот г.Ярославля, Углича и других городов, старинные церковные ризы, украшенные чеканкой русских мастеровых, французские бронзовые каминные часы. </p>
+                    </div>
+                    <img src="../images/metal.jpg" alt="history" class="m-photo">
+                    <button type="button" class="close" onclick="document.getElementById('MusTwo').style.visibility = 'hidden'"></button>
                 </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 9" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 9</h4>
+                <button class="muzeum-grid-19-items" type="button" onclick="document.getElementById('MusThree').style.visibility = 'visible'">
+                    <img src="../images/m-engraving.jpg" alt="Музей  гравюр" class="muzeum-photo-grid">
+                    <h4 class="offlain-muzeim-title">Музей  гравюр</h4>
+                </button>
+                <div class="main__about main__about_3" id="MusThree">
+                    <div>
+                        <h3 class="main__title">Музей  гравюр</h3>
+                        <p class="main__description">
+                            В этом музее находятся уникальные произведения графики европейской печатной и оригинальной западноевропейской графики 18-19 вв.
+                            <br>
+                            <br>
+                            Коллекция представлена произведениями итальянской, нидерландской, фламандской, голландской, немецкой, французской, английской, национальных школ, в т.ч. работы французского гравера и живописца Клода Фердинанда Гайара, итальянского мастера гравюрного искусства Пьетро Беттелини, французского рисовальщика и гравера Луи Мишель Хальбу (1730-1809), работы которого представлены в коллекциях практически всех мировых музеев. Не менее интересна работа Жана Фердинанда Жубера, французского живописца, гравёра, фотографа и изобретателя «Рубенс. Маленькие Иисус и Иоанн с ангелочками».
+                            <br>
+                            <br>
+                            С «Мадонны» Рафаэля делалось больше репродукций, чем с произведений какого-либо другого художника, и все они нам знакомы с юности. Многие из гравюр, созданных с картин великого итальянца, также представлены  на экспозиции музея.
+                            Интерес представляют три произведения из серии гравюр «Часы Рафаэля», выполненной Жаном-Батистом Фоссейе и ещё девятью художниками в 1790-х или начале 1800-х годов (но, по всей видимости, не позднее 1806 года). Список продолжат гравюры братьев Карраччи, ван Дейка, Рембрандта, Фрагонара и других замечательных европейских художников.
+                        </p>
+                    </div>
+                    <img src="../images/engraving.jpg" alt="engraving" class="m-photo">
+                    <button type="button" class="close" onclick="document.getElementById('MusThree').style.visibility = 'hidden'"></button>
                 </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 10" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 10</h4>
+                <button class="muzeum-grid-19-items" type="button" onclick="document.getElementById('MusFour').style.visibility = 'visible'">
+                    <img src="../images/m-ceramics.jpg" alt="Музей  керамики" class="muzeum-photo-grid">
+                    <h4 class="offlain-muzeim-title">Музей  керамики</h4>
+                </button>
+                <div class="main__about main__about_4" id="MusFour">
+                    <div>
+                        <h3 class="main__title">Музей  керамики</h3>
+                        <p class="main__description">
+                            В музее экспонирует коллекция, насчитывающая около 1000 экспонатов. На витринах выставлены предметы народной керамики, восточные сосуды, куклы и игрушки, отражающие многообразие используемых в народном искусстве материалов, техник его обработки, формования, декорирования.
+                            <br>
+                            <br>
+                            Экспонаты демонстрируют своеобразие форм и способов их украшения в различных регионах и центрах России и Востока – от небольших, локального значения очагов ремесла до всемирно известных народных художественных промыслов, таких как Гжель, Скопин, Дымка и экспонатов заводов бывшего Советского Союза.
+                            <br>
+                            <br>
+                            В музее выставляется часть коллекции, принадлежавшая легендарной художнице, жившей в Ярославле, Ариадне Леонидовне Соколовой. Нашим мемориалом, посвящённым Соколовой А.Л., мы отдаем дань этой замечательной женщине, неутомимому борцу и творцу прекрасного.
+                            <br>
+                            <br>
+                            В коллекции собраны куклы, картины, афиши, каталоги выставок, книги стихов, личные вещи художницы, коллекция Дагестанкой керамики (сосуды, глиняные фигурки-амулеты с изображениями людей, животных, птиц). Эти игрушки - языческие символы далёкихвремён.
+                            <br>
+                            <br>
+                            Все эти предметы, хранившиеся в «Доме муз», были переданы самой А. Соколовой, выкуплены или любезно переданы родственниками в наш музей.
+                            <br>
+                            <br>
+                            В галереи керамики представлена коллекция восточных сосудов и керамики, артефактов из Израиля, дымковской игрушки, замечательные образцы фарфоровых заводов СССР.  У нас Вы можете познакомиться и полюбоваться вышитыми картинами и картинами вышитыми бисером.
+                      </p>
+                    </div>
+                    <img src="../images/ceramics.jpg" alt="ceramics" class="m-photo">
+                    <button type="button" class="close" onclick="document.getElementById('MusFour').style.visibility = 'hidden'"></button>
                 </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 11</h4>
+                <button class="muzeum-grid-19-items" type="button" onclick="document.getElementById('MusFive').style.visibility = 'visible'">
+                    <img src="../images/m-fashion.jpg" alt="Музей  моды" class="muzeum-photo-grid">
+                    <h4 class="offlain-muzeim-title">Музей  моды</h4>
+                </button>
+                <div class="main__about main__about_5" id="MusFive">
+                    <div>
+                        <h3 class="main__title">Музей  моды</h3>
+                        <p class="main__description">Место моды в музее или на улице – вопрос, который, скорее всего, так и останется без ответа. В Музее моды, расположенном в старинном селе Толбухино, вы окунётесь в атмосферу салона модистки. Манекены с нарядами, гравюры из французских модных журналов XIX века, швейные принадлежности и раритетные швейные машины окружают посетителей музея. Экспозиция посвящена истории моды.</p>
+                    </div>
+                    <img src="../images/fashion.jpg" alt="fashion" class="m-photo">
+                    <button type="button" class="close" onclick="document.getElementById('MusFive').style.visibility = 'hidden'"></button>
                 </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 12</h4>
+                <button class="muzeum-grid-19-items" type="button" onclick="document.getElementById('MusSix').style.visibility = 'visible'">
+                    <img src="../images/m-Peter.jpg" alt="Музей  Петра Великого" class="muzeum-photo-grid">
+                    <h4 class="offlain-muzeim-title">Музей  Петра Великого</h4>
+                </button>
+                <div class="main__about main__about_6" id="MusSix">
+                    <div>
+                        <h3 class="main__title">Музей  Петра Великого</h3>
+                        <p class="main__description">Музей Петра I расположен в древнем селе Толбухино (ранее Давыдково) на старинном почтовом тракте Москва-Архангельск. В конце XVII - начале XVIII века, по сведениям ярославского историка П. А. Критского, «в Давыдкове проездом в Архангельск останавливался Петр Великий, который подарил в Воскресенскую церковь напрестольный крест с частицами мощей; крест этот хранился в церкви, как святыня». А по некоторым сведениям Петр I бывал в Давыдкове не раз. Старики помнили легенду о посещении Давыдкова Петром I. Царь останавливался здесь и ночевал, а на озере охотился на уток. 
+                        <br />
+                        <br />
+                        По сказу стариков, дорога на Архангельск проходила тогда через Давыдково на село Ново и далее. Якобы около села на дороге стоял камень, где специалист из свиты царя высек надпись, что здесь такого-то года и числа государь Всея Руси Петр I останавливался и принимал пищу. Где находится сей камень теперь неизвестно, но близ села Ново рассказывали аналогичный сказ.
+                        <br />
+                        <br />
+                        В экспозиции Музея Петра I представлены - резная мебель из дуба и красного дерева петровских времен, большая коллекция оружия,гравюры Франции, Голландии и Англии.
+                        <br />
+                        <br />
+                        Изобразительное искусство стремилось обозначить отношение к личности Петра 1. Это, прежде всего, образ царя - реформатора, завоевателя, сильного и могущественного, идеального правителя. Во-вторых, это мудрый полководец, смелый воин - победитель, герой Полтавской битвы. И ещё одна форма, самая неожиданная и трогательная - это просто человек, незаурядный, но такой же, как и мы.
+                        <br />
+                        <br />
+                        Сегодня, благодаря трудоёмкой работе деятелей искусства прошлых веков, потомки Петра Алексеевича знакомы с внешностью великого русского императора.Обратимся к гравюре, работы Якоба Хубракена «Портрет императора Петра Первого». Лист выполнен в технике резцовой гравюры на медной доске.
+                        <br />
+                        <br />
+                        Эта гравюра, накануне славной даты в истории государства Российского – 350-летия первого российского императора, занимает центральное место в экспозиции музея.
+                        <br />
+                        <br />
+                        Пётр изображён по пояс в 3/4, в латах и Андреевской ленте. Внизу два клейма – одно с видом морской баталии, другое с планом Санкт-Петербурга.
+                        <br />
+                        <br />
+                        Гравюра выполнена им по портрету Петра I, написанному в Гааге в марте 1717 года Карелом де Моором — голландским художником, одним из лучших мастеров портретной живописи лейденской школы. Пётр I был очень доволен портретом и желал, чтобы с него были сделаны гравюры, гобелены и миниатюры.
+                        </p>
+                    </div>
+                    <img src="../images/Peter.jpg" alt="Peter" class="m-photo">
+                    <button type="button" class="close" onclick="document.getElementById('MusSix').style.visibility = 'hidden'"></button>
                 </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 13</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 14</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 15</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 16</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 17</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 18</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 19</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 20</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 21</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 22</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 23</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 24</h4>
-                </div>
-                <div class="muzeum-grid-19-items">
-                    <a href="../images/5.jpg" target="_blank"><img src="../images/5.jpg" alt="Музей 7" class="muzeum-photo-grid"></a>
-                    <h4 class="offlain-muzeim-title">Музей 25</h4>
+                <button class="muzeum-grid-19-items" type="button" onclick="document.getElementById('MusSeven').style.visibility = 'visible'">
+                    <img src="../images/m-porcelain.jpg" alt="Музей  фарфора" class="muzeum-photo-grid">
+                    <h4 class="offlain-muzeim-title">Музей  фарфора</h4>
+                </button>
+                <div class="main__about main__about_7" id="MusSeven">
+                    <div>
+                        <h3 class="main__title">Музей  фарфора</h3>
+                    <p class="main__description">
+                        Музей фарфора в селе Толбухино состоит главным образом из столовой посуды, разных стран и эпох, что даёт возможность проследить путь развития производства фарфора.
+                        <br>
+                        <br>
+                        Прежде всего привлекает витрина китайского фарфора, приносящего в окружающий  мир настроение лёгкости, радости и красоты. Получив своё второе рождение в Европе в XVIII веке, фарфор будто специально был создан для стиля рококо. Яркий пример тому - изумительная французская тарелка, с изображением картины Франсуа Буше «Четыре периода. Весна». 
+                        <br>
+                        <br>
+                        Фарфор XVIII–XIX веков – это дорогостоящее искусство для избранных и заветная мечта для многих. Английский,голландский и португальский фарфор на экспозиции Музея - тому подтверждение.
+                        <br>
+                        <br>
+                        Основу собрания данного музея составляют фарфоровые изделия таких российских заводов, как Ленинградский фарфоровый завод, Дмитровский, Дулевский, Гжель, «Первомайский» в Песочном Ярославской области, Конаковский и других предприятий. Безусловно, нашлось место на экспозиции и знаменитому «Кузнецовскому»  фарфору.
+                    </p>
+                    </div>
+                    <img src="../images/porcelain.jpg" alt="porcelain" class="m-photo">
+                    <button type="button" class="close" onclick="document.getElementById('MusSeven').style.visibility = 'hidden'"></button>
                 </div>
             </div>
         </div>
