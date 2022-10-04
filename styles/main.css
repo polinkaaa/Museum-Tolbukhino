@@ -16,7 +16,7 @@ body {
 }
 .header-logo {
     display: block;
-    background-image: url(../images/Logo.png);
+    background-image: url(../images/Mask\ group.png);
     height: 55px;
     width: 91px;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ body {
 }
 .arrow-left {
     position: absolute;
-    left: -27px;
+    left: -18px;
     top: 30%;
     transform: translateY(-30%);
     z-index: 9;
@@ -184,7 +184,7 @@ body {
 }
 .arrow-right {
     position: absolute;
-    right: -27px;
+    right: -6px;
     top: 30%;
     transform: translateY(-30%);
     z-index: 9;
@@ -226,12 +226,12 @@ td {
     border-style: solid;
     border-width: 0 1px 1px 0;
     border-color: white;
-    background: rgba(213, 148, 148, 0.38);
+    background: #d1ed7d;
     padding: 10px 20px;
     color: #630000;
 }
 td:first-child {
-    background: rgba(158, 8, 8, 0.431);
+    background: #8ec560;
     color: white;
 }
 .map {
@@ -252,7 +252,7 @@ table {
     color: #630000;
 }
 .tel:hover, .mail:hover, .address:hover {
-    color:rgba(158, 8, 8, 0.431);
+    color:#216001;
 }
 .tel-table a::after {
     content: ',';
@@ -569,9 +569,6 @@ table {
 @media (max-width: 765px) {
     .nav {
         display: none;
-    }
-    .header-logo {
-        width: 198px;
     }
     .footer {
         flex-direction: column;
