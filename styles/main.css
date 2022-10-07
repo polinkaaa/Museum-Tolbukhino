@@ -1,7 +1,7 @@
 body {
     font-family: 'Playfair Display', serif;
 }
-.container {
+.container, .container-other {
     max-width: 1180px;
     margin: 0 auto;
     padding-left: 15px;
@@ -17,8 +17,8 @@ body {
 .header-logo {
     display: block;
     background-image: url(../images/Mask\ group.png);
-    height: 55px;
-    width: 91px;
+    height: 61px;
+    width: 93px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -201,8 +201,8 @@ body {
     gap: 60px;
 }
 .footer-logo {
-    height: 58px;
-    width: 288px;
+    height: 61px;
+    width: 93px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -334,6 +334,7 @@ table {
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    font-size: 16px;
 }
 .panorama {
     margin-bottom: 60px;
@@ -403,14 +404,17 @@ table {
     z-index: 1;
     background-color: #fff;
     padding: 18px;
+    padding-right: 3px;
     border-radius: 20px;
-    width: 1177px;
+    right: 15px;
+    left: 15px;
     top: 3%;
     bottom: 3%;
     box-shadow: 0 7px 32px 8px rgb(71 90 67 / 10%);
     outline: 9999px solid rgba(0,0,0,0.5);
     visibility: hidden;
     display: flex;
+    flex-direction: column;
 }
 .m-photo {
     width: 100%;
@@ -419,14 +423,17 @@ table {
 }
 .main__description {
     max-width: 1525px;
-    max-height: 500px;
+    max-height: 210px;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding-right: 5000px;
-    margin-right: -5000px;
+    padding-right: 15px;
     font-weight: 400;
     font-size: 18px;
 }
+/*.main__description::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}*/
 .main__title {
     font-size: 25px;
     margin: 20px 0;
@@ -476,13 +483,8 @@ table {
     }
 }
 @media (max-width: 1000px) {
-    .container {
+    .container, .container-other {
         max-width: 819px;
-    }
-    .header-logo {
-        height: 44px;
-        width: 224px;
-        background-size: contain;
     }
     .header-nav {
         gap: 22px;
@@ -502,7 +504,7 @@ table {
     .picture {
         height: 310px;
     }
-    .text {
+    .text, .jost {
         font-size: 18px;
     }
     .about-muzeum {
@@ -524,12 +526,10 @@ table {
     .reviews_item {
         margin-bottom: 65px;
     }
-    .reviews_item p {
+    .reviews_item p, .muzeum-grid-about {
         font-size: 16px;
     }
     .footer-logo {
-        height: 44px;
-        width: 224px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -540,6 +540,11 @@ table {
     /* Контакты */
     table {
         margin-bottom: 40px;
+    }
+
+    /* Музеи отдельно */
+    .pano-title {
+        font-size: 26px;
     }
 }
 @media (max-width: 900px) {
@@ -576,10 +581,6 @@ table {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .header-logo {
-        height: 40px;
-        width: 198px;
-    }
     .header-nav {
         gap: 20px;
     }
@@ -609,18 +610,6 @@ table {
     .nav {
         display: none;
     }
-    .footer {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .footer-logo {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: 15px;
-    }
-    .footer-mail {
-        margin-bottom: 15px;
-    }
 
     /* Контакты */
     table {
@@ -637,6 +626,12 @@ table {
     .description {
         font-size: 12px;
     }
+    .footer {
+        gap: 45px;
+    }
+    .footer a {
+        font-size: 15px;
+    }
 
     /* Контакты */
     .tel-table {
@@ -648,6 +643,14 @@ table {
     }
 }
 @media (max-width: 600px) {
+    .header-logo {
+        height: 48px;
+        width: 73px;
+    }
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     .title {
         font-size: 35px;
         margin-bottom: 10px;
@@ -667,12 +670,19 @@ table {
     .muzeum-title {
         font-size: 24px;
     }
-    .muzeum-grid {
-        display: flex;
-        width: auto;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        padding-bottom: 50px;
+    .muzeum-grid-title {
+        font-size: 20px;
+    }
+    .muzeum-grid-about {
+        font-size: 15px;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0 15px;
+    }
+    .footer-logo {
+        padding: 0;
     }
     /* Контакты */
     table {
@@ -690,6 +700,58 @@ table {
         overflow-x: scroll;
         overflow-y: hidden;
         padding-bottom: 50px;
+        align-items: baseline;
+    }
+    .muzeum-grid-19::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .muzeum-grid-19-items {
+        flex: 0 0 210px;
+    }
+    .other {
+        padding-right: 0;
+    }
+
+    /* Музеи отдельно */
+    .jost, .read_more {
+        font-size: 13px;
+    }
+    .pano-main {
+        height: 300px;
+        width: 450px;
+    }
+    .pano-title {
+        font-size: 20px;
+    }
+}
+@media (max-width: 530px) {
+    .muzeum-grid {
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        gap: 15px;
+    }
+    .muzeum-grid::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .muzeum-grid-link {
+        flex: 0 0 210px;
+    }
+    
+    .container-other {
+        padding-right: 0;
+    }
+    .three {
+        margin-right: 15px;
+    }
+
+    /* Музеи отдельно */
+    .pano-main {
+        height: 200px;
+        width: 300px;
     }
 }
 @media (max-width: 430px) {
@@ -698,6 +760,10 @@ table {
     }
     .description {
         display: none;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 15px;
     }
 
     /* Контакты */
@@ -709,10 +775,6 @@ table {
     .header_menu {
         width: 28px;
         height: 16px;
-    }
-    .header-logo {
-        width: 145px;
-        height: 29px;
     }
     .bg {
         margin-bottom: 0;
@@ -727,5 +789,29 @@ table {
     }
     table {
         font-size: 12px;
+    }
+
+    /* Музеи отдельно */
+    .pano-main {
+        height: 160px;
+        width: 240px;
+    }
+}
+@media (max-height: 530px) {
+    .main__title {
+        font-size: 20px;
+    }
+    .main__description {
+        max-height: 130px;
+        font-size: 16px;
+    }
+}
+@media (max-height: 420px) {
+    .main__title {
+        font-size: 18px;
+    }
+    .main__description {
+        max-height: 120px;
+        font-size: 14px;
     }
 }

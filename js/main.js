@@ -95,3 +95,20 @@ function closeModal() {
       d.addEventListener("DOMContentLoaded", f, false);
   } else { f(); }
 })(document, window, "yandex_metrika_callbacks");
+
+
+
+// читать далее
+function myFunction() {
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (moreText.style.display == "inline") {
+      btnText.innerHTML = "Читать далее";
+      moreText.style.display = "none";
+  } 
+  else {
+      btnText.innerHTML = "Скрыть";
+      moreText.style.display = "inline";
+  }
+}

@@ -15,8 +15,9 @@
     <header id="headerTop">
         <div class="container">
             <div class="header">
+                <button class="header_menu" onclick="openModal()"></button>
                 <a href="../index.html" class="header-logo"></a>
-                <nav>
+                <nav class="nav">
                     <ul class="header-nav">
                         <li><a href="../index.html">Главная</a></li>
                         <li><a href="../museums.html">Музеи</a></li>
@@ -24,7 +25,7 @@
                         <li><a href="../contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
-                <a href="tel:89605300939" class="header-phone">8-960-530-09-39</a>
+                <a href="tel:89605300939" class="header-phone nav">8-960-530-09-39</a>
             </div>
         </div>
     </header>
@@ -61,20 +62,16 @@
         <a href="mailto:museum-inform76@yandex.ru" class="footer-mail">museum-inform76@yandex.ru</a>
     </footer>
 
-    <script>
-        function myFunction() {
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
+    <div class="modal" id="modal">
+        <ul class="header-nav">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../museums.html">Музеи</a></li>
+            <li><a class="link-serf" href="../index.html#about_muzeum" onclick="closeModal()">О нас</a></li>
+            <li><a href="../contacts.html">Контакты</a></li>
+        </ul>
+        <button class="menu-close" onclick="closeModal()"></button>
+    </div>
 
-            if (moreText.style.display == "inline") {
-                btnText.innerHTML = "Читать далее";
-                moreText.style.display = "none";
-            } 
-            else {
-                btnText.innerHTML = "Скрыть";
-                moreText.style.display = "inline";
-            }
-        }
-    </script>
+    <script src="../../js/main.js"></script>
 </body>
 </html>
