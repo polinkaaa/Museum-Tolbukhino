@@ -404,7 +404,6 @@ table {
     z-index: 1;
     background-color: #fff;
     padding: 18px;
-    padding-right: 3px;
     border-radius: 20px;
     right: 15px;
     left: 15px;
@@ -421,21 +420,14 @@ table {
     width: 100%;
     overflow: hidden;
     object-fit: contain;
-    padding-right: 15px;
 }
 .main__description {
-    max-width: 1525px;
     max-height: 210px;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding-right: 15px;
     font-weight: 400;
     font-size: 18px;
 }
-/*.main__description::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}*/
 .main__title {
     font-size: 25px;
     margin: 20px 0;
