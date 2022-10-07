@@ -49,7 +49,7 @@ body {
 /* Главная */
 .bg {
     text-align: center;
-    background-image: url(../images/landscape1.jpg);
+    background-image: url(../images/landscape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center -41px;
@@ -110,12 +110,12 @@ body {
 }
 .muzeum-grid-link {
     background-color: #fff98f;
-    background-size: 50px 50px;
+    background-size: 60px 60px;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 20px;
     cursor: pointer;
-    border-radius: 100%;
+    border-radius: 20%;
     font-family: 'Jost', sans-serif;
     font-size: 24px;
     text-align: center;
@@ -131,7 +131,7 @@ body {
     background-image: url(../images/music.SVG);
 }
 .muzeum-grid-link.two {
-    background-image: url(../images/tea.SVG);
+    background-image: url(../images/ceramics.svg);
 }
 .muzeum-grid-link.three {
     background-image: url(../images/glass.SVG);
@@ -312,6 +312,45 @@ table {
     font-size: 19px;
     display: flex;	
     justify-content: center;
+}
+
+/* Музеи отдельно */
+.jost {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+.text-muzeum {
+    padding-bottom: 30px;
+}
+#more {
+    display: none;
+}
+.read_more {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rebeccapurple;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+.panorama {
+    margin-bottom: 60px;
+}
+.pano-main {
+    height: 325px;
+    width: 500px;
+    object-fit: cover;
+    border: 5px solid #acd3a7;
+}
+.pano-title {
+    font-size: 30px;
+}
+.exhibits {
+    width: 989px;
+    height: 658px;
+    margin-bottom: 80px;
 }
 
 /* Modal */
