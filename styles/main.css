@@ -415,13 +415,13 @@ table {
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
 }
 .m-photo {
     width: 100%;
     overflow: hidden;
     object-fit: contain;
+    padding-right: 15px;
 }
 .main__description {
     max-width: 1525px;
