@@ -453,6 +453,10 @@ table {
 }
 
 
+.about-exhibits {
+    display: none;
+}
+
 /* Адаптив */
 @media (min-width: 766px) {
     .header_menu {
