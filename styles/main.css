@@ -746,6 +746,11 @@ table {
         margin-right: 15px;
     }
 
+    /* Модальное меню */
+    .modal {
+        margin: 0 auto;
+    }
+
     /* Музеи отдельно */
     .pano-main {
         height: 200px;
